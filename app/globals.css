@@ -1,0 +1,33 @@
+@import '@/fonts/fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: IranSansX !important;
+    font-size: 100%;
+    user-select: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(234, 70, 70, 0);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #195b56;
+    border-radius: 20px;
+}
+
+.filter > div > div > div {
+    height:32px;
+}
