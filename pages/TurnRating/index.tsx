@@ -8,7 +8,7 @@ import CloseIcon from "@/public/Icon/close";
 import DeleteUser from "../../components/Modals/DeleteUserModal";
 import CustomerIcon from "@/public/Icon/customerIcon";
 import {truncateTextStart} from "@/services/TurncateText";
-import TurnCalender from "@/components/TurnCalender";
+// import TurnCalender from "@/components/TurnCalender";
 import {IoIosAdd} from "react-icons/io";
 
 export default function TurnRatingPage() {
@@ -22,7 +22,6 @@ export default function TurnRatingPage() {
         },
     )
     const handleMenuItemClick = (action: string) => {
-        console.log(item)
         if (action === "cancelTurn") {
             setOpen(!open)
         } else {
@@ -86,7 +85,7 @@ export default function TurnRatingPage() {
 
             <div className={"bg-white rounded-lg shadow-lg h-full p-3 overflow-y-auto w-full"} dir={"ltr"}>
                 {/*// *** calender //////////////////////////*/}
-                <TurnCalender/>
+                {/*<TurnCalender/>*/}
             </div>
 
             {/*// *** modal //////////////////////////*/}
