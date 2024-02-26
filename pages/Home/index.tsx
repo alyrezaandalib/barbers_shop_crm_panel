@@ -29,14 +29,14 @@ export default function Home() {
             <div className={"w-2/5 h-full flex justify-between flex-col items-center"}>
                 {/*// ** work par times ///////////////////////////*/}
                 <div className={"h-fit w-full"}>
-                    <div className="flex items-center justify-between w-full">
+                    <div className="flex items-center justify-between gap-2 w-full">
                         {stats.map((item, index) => <Stats key={index} name={item.name} value={item.value}/>)}
                     </div>
                     {/*// ** instagram information ///////////////////////////*/}
-                    <div className="shadow-lg mt-3 rounded-lg w-full flex bg-white justify-between">
+                    <div className="shadow-lg mt-3 rounded-lg w-full min-h-24 flex gap-2 bg-white justify-between">
                         {instagramStats.map((item, index) => <InstagramStats key={index} name={item.name}
                                                                              value={item.value}/>)}
-                        <div className="bg-secondary rounded-l-lg flex justify-center items-center border-none w-[25%]">
+                        <div className="bg-secondary rounded-l-lg flex justify-center items-center border-none w-full">
                             <Instagram/>
                         </div>
                     </div>

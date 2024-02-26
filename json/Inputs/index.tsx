@@ -5,7 +5,7 @@ export function ProfileInputs(formData: any) {
             label: "نام*",
             value: "FirstName",
             type: "text",
-            isInvalid: formData.FirstName.trim() === "",
+            // isInvalid: formData.FirstName.trim() === "",
             onClearDisable: false,
             validationRegex: /^.+$/,
             message: "لطفا نام خود را وارد کنید."
@@ -14,7 +14,7 @@ export function ProfileInputs(formData: any) {
             label: "نام خانوادگی*",
             value: "LastName",
             type: "text",
-            isInvalid: formData.LastName.trim() === "",
+            // isInvalid: formData.LastName.trim() === "",
             onClearDisable: false,
             validationRegex: /^.+$/,
             message: "لطفا نام خانوادگی خود را وارد کنید."
@@ -23,7 +23,7 @@ export function ProfileInputs(formData: any) {
             label: "ایمیل*",
             value: "Email",
             type: "email",
-            isInvalid: formData.Email.trim() === "" || !formData.Email.match(/^[\w-]+(\.[\w-]+)*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$/),
+            // isInvalid: formData.Email.trim() === "" || !formData.Email.match(/^[\w-]+(\.[\w-]+)*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$/),
             onClearDisable: false,
             validationRegex: /^[\w-]+(\.[\w-]+)*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$/,
             message: "ایمیل وارد شده نامعتبر است."
@@ -32,7 +32,7 @@ export function ProfileInputs(formData: any) {
             label: "رمز عبور*",
             value: "Password",
             type: "text",
-            isInvalid: formData.Password.trim() === "" || !formData.Password.match(/^.{8}$/),
+            // isInvalid: formData.Password.trim() === "" || !formData.Password.match(/^.{8}$/),
             onClearDisable: false,
             validationRegex: /^.{8}$/,
             message: "رمز عبور باید شامل 8 کاراکتر باشد"
@@ -52,7 +52,7 @@ export function CustomersInputs(formData: any) {
             value: "PhoneNumber",
             type: "text",
             onClearDisable: false,
-            isInvalid: formData.PhoneNumber.trim() === "" || !formData.PhoneNumber.match(/^(\+98|0)?9\d{9}$/),
+            // isInvalid: formData.PhoneNumber.trim() === "" || !formData.PhoneNumber.match(/^(\+98|0)?9\d{9}$/),
             validationRegex: /^(\+98|0)?9\d{9}$/,
             message: "لطفا شماره تماس خود را به درستی وارد کنید"
         },
@@ -67,7 +67,7 @@ export function EmployeesInputs(formData: any) {
             label: "نام*",
             value: "FirstName",
             type: "text",
-            isInvalid: formData.FirstName.trim() === "",
+            // isInvalid: formData.FirstName.trim() === "",
             onClearDisable: false,
             validationRegex: /^.+$/,
             message: "لطفا نام خود را وارد کنید"
@@ -76,7 +76,7 @@ export function EmployeesInputs(formData: any) {
             label: "نام خانوادگی*",
             value: "LastName",
             type: "text",
-            isInvalid: formData.LastName.trim() === "",
+            // isInvalid: formData.LastName.trim() === "",
             onClearDisable: false,
             validationRegex: /^.+$/,
             message: "لطفا نام خود را وارد کنید"
@@ -93,7 +93,7 @@ export function EmployeesInputs(formData: any) {
             label: "شماره تماس*",
             value: "PhoneNumber",
             type: "text",
-            isInvalid: formData.PhoneNumber.trim() === "" || !(formData.PhoneNumber.match(/^.+$/) || formData.PhoneNumber.match(/^(\+98|0)?9\d{9}$/)),
+            // isInvalid: formData.PhoneNumber.trim() === "" || !(formData.PhoneNumber.match(/^.+$/) || formData.PhoneNumber.match(/^(\+98|0)?9\d{9}$/)),
             onClearDisable: false,
             validationRegex: /^(\+98|0)?9\d{9}$/,
             message: "لطفا شماره تماس خود را به درستی وارد کنید"
@@ -110,7 +110,7 @@ export function EmployeesInputs(formData: any) {
             label: "درصد سود مشارکت*",
             value: "cooperationBenefits",
             type: "text",
-            isInvalid: formData.cooperationBenefits === null || formData.cooperationBenefits.trim() === "",
+            // isInvalid: formData.cooperationBenefits === null || formData.cooperationBenefits.trim() === "",
             onClearDisable: false,
             message: "لطفا درصد مشارکت را وارد کنید"
         },
@@ -118,7 +118,7 @@ export function EmployeesInputs(formData: any) {
             label: "درصد سود مشارکت در صورت آوردن مشتری*",
             value: "cooperationBenefits2",
             type: "text",
-            isInvalid: formData.cooperationBenefits2 === null || formData.cooperationBenefits2.trim() === "",
+            // isInvalid: formData.cooperationBenefits2 === null || formData.cooperationBenefits2.trim() === "",
             onClearDisable: false,
             message: "لطفا درصد مشارکت را وارد کنید"
         },
@@ -164,7 +164,7 @@ export function EmployeesInputs(formData: any) {
             label: "مقدار هزینه بیمه*",
             value: "InsuranceAmount",
             type: "text",
-            isInvalid: formData.InsuranceAmount === "" || (!formData.Insurance && formData.InsuranceAmount.trim() === ""),
+            // isInvalid: formData.InsuranceAmount === "" || (!formData.Insurance && formData.InsuranceAmount.trim() === ""),
             onClearDisable: false,
             isDisabled: !formData.Insurance,
             validationRegex: /^.+$/,
@@ -181,22 +181,22 @@ export function EmployeesGroupInputs(formData: any) {
             value: "Name",
             type: "text",
             onClearDisable: false,
-            isInvalid: formData.Name.trim() === "",
+            // isInvalid: formData.Name.trim() === "",
             validationRegex: /^.+$/,
             message: "لطفا نام گروه را وارد کنید"
         }, {
             isAutoSelect: true,
             placeholder: "تخصص*",
             value: "Expertise",
-            isInvalid: formData.Expertise === null || formData.Expertise.trim() === "",
+            // isInvalid: formData.Expertise === null || formData.Expertise.trim() === "",
             validationRegex: /^.+$/,
             message: "لطفا یکی از تخصص های زیر را انتخاب کنید",
             Items: [
-                {label: "Cat", value: "cat", description: "The second most popular pet in the world"},
-                {label: "Dog", value: "dog", description: "The most popular pet in the world"},
-                {label: "Elephant", value: "elephant", description: "The largest land animal"},
-                {label: "Lion", value: "lion", description: "The king of the jungle"},
-                {label: "Tiger", value: "tiger", description: "The largest cat species"},
+                // {label: "Cat", value: "cat", description: "The second most popular pet in the world"},
+                // {label: "Dog", value: "dog", description: "The most popular pet in the world"},
+                // {label: "Elephant", value: "elephant", description: "The largest land animal"},
+                // {label: "Lion", value: "lion", description: "The king of the jungle"},
+                // {label: "Tiger", value: "tiger", description: "The largest cat species"},
             ]
         },
     ]

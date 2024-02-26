@@ -5,7 +5,6 @@ import {EyeFilledIcon} from "@/public/Icon/EyeIcon";
 import {EyeSlashFilledIcon} from "@/public/Icon/EyeSlashFileIcon";
 
 export default function WithdrawMoney() {
-    const [isVisible, setIsVisible] = useState(false);
     const [isVisibleInventory, setIsVisibleInventory] = useState(false)
 
     const handleSubmit = (e: any) => {
@@ -17,9 +16,9 @@ export default function WithdrawMoney() {
             <button className="focus:outline-none" type="button"
                     onClick={() => setIsVisibleInventory(!isVisibleInventory)}>
                 {isVisibleInventory ? (
-                    <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none"/>
-                ) : (
                     <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none"/>
+                ) : (
+                    <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none"/>
                 )}
             </button>
             <div className={"flex justify-between text-lg font-bold mb-5"}>
@@ -33,16 +32,7 @@ export default function WithdrawMoney() {
                     label="برداشت وجه"
                     variant="flat"
                     placeholder="مبلغ را وارد کنید..."
-                    endContent={
-                        <button className="focus:outline-none" type="button" onClick={() => setIsVisible(!isVisible)}>
-                            {isVisible ? (
-                                <EyeSlashFilledIcon className="text-2xl text-default-400 pointer-events-none"/>
-                            ) : (
-                                <EyeFilledIcon className="text-2xl text-default-400 pointer-events-none"/>
-                            )}
-                        </button>
-                    }
-                    type={isVisible ? "text" : "password"}
+                    type={isVisibleInventory ? "text" : "password"}
                     classNames={{
                         inputWrapper: "rounded-l-none",
                     }}

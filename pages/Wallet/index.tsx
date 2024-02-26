@@ -11,7 +11,7 @@ export default function WalletPage() {
             <div className={"w-full flex gap-3 h-[300px]"}>
                 {/*// *** user status //////////////////////*/}
                 <div className={"bg-gradient-to-tl from-secondary to-accent rounded-lg shadow-lg h-full p-2 w-[420px] flex flex-col justify-between"}>
-                    <div className={"text-xl p-1"}>وضعیت کاربر</div>
+                    <div className={"text-xl p-1 text-white"}>وضعیت کاربر</div>
                     <div className={"flex flex-col justify-between gap-1.5"}>
                         <div
                             className={"bg-white shadow-lg rounded-xl flex justify-between items-center p-4"}>
